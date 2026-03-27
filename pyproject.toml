@@ -1,0 +1,26 @@
+[project]
+name = "qspice-analysis-template"
+version = "0.1.0"
+description = "Template for simulation automation with qspice from Nunobrun."
+authors = [
+    {name = "pod042",email = "rafael.scholtz@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "qspice (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)",
+    "pandas (>=3.0.1,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "qspice_utils", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.15.8,<0.16.0)"
+]

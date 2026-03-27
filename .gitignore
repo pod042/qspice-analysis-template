@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
+*.dll
+*.so
+
+# Tests directoty
+/tests/
+
+# QSpice / SPICE specific (Ignore heavy simulation artifacts)
+*.raw
+*.log
+*.bin
+*.op.stats
+*.net
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Vscode
+.vscode/
+
+# Ruff
+.ruff_cache/
