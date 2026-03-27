@@ -35,23 +35,29 @@ Before using this template, ensure you have the following software installed:
 
 3. **Activate the Virtual Environment** (optional, but recommended):
    ```bash
-   poetry shell
+   poetry env activate
    ```
 
 ## Usage
 
-1. **Launch Jupyter Notebook**:
+1. **Register the poetry env (optional if using vscode or another IDE)**:
    ```bash
-   jupyter notebook
+   poetry run python -m ipykernel install --user --name=qspice-template-env  --display-name="Python (Qspice-Sim)"
+   ```
+
+2. **Launch Jupyter Notebook**:
+   ```bash
+   poetry run jupyter notebook
    ```
    Or use VS Code's Jupyter extension to open the notebooks.
 
-2. **Run the Examples**:
+3. **Run the Examples**:
+   - If needed, change the kernel to the one created in step 1
    - Open `notebooks/qspice_analysis_template.ipynb`.
    - Follow the cells to run the provided examples.
    - Modify parameters and simulations as needed for your own circuits.
 
-3. **Customize for Your Project**:
+4. **Customize for Your Project**:
    - Place your QSPICE schematic files (`.qsch`) in the `sim/` directory.
    - Update the notebooks or create new ones to automate your simulations.
    - Use the utilities in `src/qspice_utils/` for common tasks.
