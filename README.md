@@ -15,7 +15,7 @@ A Python-based jupyter notebook template for automating QSPICE simulations and p
 Before using this template, ensure you have the following software installed:
 
 - **Python 3.11 or higher**: The project requires Python 3.11+ for compatibility with the dependencies.
-- **QSPICE (Free)**: Download and install QSPICE from the official website (https://www.qorvo.com/design-tools/design-software/qspice). This is the core simulation engine used by the template.
+- **QSPICE (Free)**: Download and install QSPICE from the official website (https://www.qorvo.com/design-hub/design-tools/interactive/qspice). This is the core simulation engine used by the template.
 - **Poetry (Free)**: A dependency management tool for Python. Install it from https://python-poetry.org/docs/#installation. Poetry handles the virtual environment and package installation.
 
 ## Installation
